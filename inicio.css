@@ -1,0 +1,61 @@
+/* FONDO (lo dejamos como quieres) */
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("img/fondos/inicio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+/* TÍTULO */
+#titulo {
+    text-align: center;
+    font-size: 40px;
+    color: #f5c6a5;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px #967951;
+    background-color: #967951;
+}
+
+/* CONTENIDO */
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 60px;
+}
+
+/* LOGO */
+.logo img {
+    width: 250px;
+}
+
+/* MENÚ */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* BOTONES (TEXTO) */
+.menu a {
+    text-decoration: none;
+    background-color: rgba(139, 107, 63, 0.9);
+    color: #f5c6a5;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* EFECTO HOVER */
+.menu a:hover {
+    background-color: #a07d4f;
+    transform: scale(1.05);
+}

@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+body{
+    background-image: url("img/fondos/contacto.jpg"); /* revisar nombre */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+/* MENÚ */
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.item{
+    text-align: center;
+}
+
+.item img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+.item img:hover{
+    transform: scale(1.05);
+}
+
+/* NOMBRE CORREGIDO */
+.nombre{
+    display: block;
+    margin: 15px 0 5px 0;
+    font-size: 18px;
+}
+
+/* PRECIO */
+.precio{
+    font-weight: bold;
+    color: #c89b3c;
+    font-size: 16px;
+}
+
+/* BOTONES */
+.btn-regresar,
+.btn-siguiente{
+    position: fixed;
+    bottom: 30px;
+    padding: 12px 30px;
+    background-color: #c89b3c;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    z-index: 10;
+}
+
+.btn-regresar{
+    left: 30px;
+}
+
+.btn-siguiente{
+    right: 30px;
+}
+
+.btn-regresar:hover,
+.btn-siguiente:hover{
+    background-color: #e6c46a;
+    transform: scale(1.05);
+    font-size: 24px;
+}
